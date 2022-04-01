@@ -1,38 +1,67 @@
 .App {
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app-container {
+  display: flex;
+  flex-direction: row;
   min-height: 100vh;
+  font-family: "Roboto";
+  background-color: #861657;
+  background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+
+
+}
+
+.holidays-app-container {
+  width: 70%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.query-desktop-contianer {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #6b0f1a;
+  background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+
+}
+
+.heading {
+  font-family: "Roboto";
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color:#b91372;
+}
+
+.holidays-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.no-holidays-container {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 50px;
+
+  height: 200px;
+  overflow: hidden;
+  width: 100%;
+  background-color: #6b0f1a;
+  background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+
+
 }
 
-.App-link {
-  color: #61dafb;
-}
+.no-holidays {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: azure;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
